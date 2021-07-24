@@ -185,7 +185,7 @@
                             </div>
                             <div class="feature-content">
                                 <h3 class="title">Post Job Free</h3>
-                                <p>Approach a top million resumes</p>
+                                <p>Approach a top million resumes </p>
                             </div>
                         </div>
                     </div>
