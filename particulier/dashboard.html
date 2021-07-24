@@ -1,0 +1,606 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Leecka || Dashboard</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="../assets/images/favicon.ico" type="img/x-icon" rel="shortcut icon">
+
+    <link rel="stylesheet" href="../assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/vendor/iconfont.min.css">
+    <link rel="stylesheet" href="../assets/css/vendor/helper.css">
+
+    <link rel="stylesheet" href="../assets/css/plugins/plugins.min.css">
+    <link rel="stylesheet" href="../assets/css/style.min.css">
+
+    <script src="../assets/js/vendor/modernizr-3.10.0.min.js"></script>
+</head>
+
+<body class="template-color-1">
+
+    <div id="main-wrapper">
+
+        <header class="black-logo-version header-sticky sticky-white d-none d-lg-block">
+            <div class="main-header">
+                <div class="container-fluid pl-50 pl-lg-15 pl-md-15 pr-0">
+                    <div class="row align-items-center no-gutters">
+
+                        <div class="col-xl-2 col-lg-2 col-12">
+                            <div class="logo">
+                                <a href="dashboard.html"><img src="../assets//images/leecka.png" alt="leecka"
+                                        width="70%"></a>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-7 col-lg-7 col-12">
+                            <nav class="main-menu">
+                                <ul>
+                                    <li>
+                                        <a href="saved.html">
+                                            favoris
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="comments.html">
+                                            Commentaires
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="history.html">
+                                            Historique
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-3 col-12">
+                            <div class="header-btn-action d-flex justify-content-end">
+                                <div class="btn-action-wrap d-flex">
+                                    <div class="jp-author item">
+                                        <a href="profil.html" title="profil">
+                                            <i class="lnr lnr-user"></i>
+                                        </a>
+                                        <a href="login-register.html">
+                                            <span>Déconnexion</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <header class="header-mobile d-block d-lg-none">
+            <div class="header-bottom menu-right">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="header-mobile-navigation d-block d-lg-none">
+                                <div class="row align-items-center">
+                                    <div class="col-3 col-md-3">
+                                        <div class="mobile-navigation text-right">
+                                            <div class="header-icon-wrapper">
+                                                <ul class="icon-list justify-content-start">
+                                                    <li class="popup-mobile-click">
+                                                        <a href="javascript:void(0)"><i class="lnr lnr-menu"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-6">
+                                        <div class="header-logo text-center">
+                                            <a href="dashboard.html">
+                                                <img src="../assets/images/leecka.png" class="img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <div class="bottom-navbar-mobile section d-block d-lg-none">
+            <nav>
+                <ul class="list-actions">
+                    <li>
+                        <a href="saved.html">
+                            <span><i class="lnr lnr-heart"></i></span>
+                            <span class="text">Favoris</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="toggle-btn-two toggle-btn-js" data-target="#notifications-mobile-id" href="comments.html">
+                            <span><i class="lnr lnr-bubble"></i></span>
+                            <span class="text">Commentaires</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="toggle-btn toggle-btn-js" data-target="#job-list-mobile-id" href="history.html">
+                            <span><i class="lnr lnr-list"></i></span>
+                            <span class="text">Historiques</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="profil.html">
+                            <span><i class="lnr lnr-user"></i></span>
+                            <span class="text">Profil</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="job-listing-section section pb-120 pb-lg-100 pb-md-80 pb-sm-60 pb-xs-50">
+            <div class="container-fluid p-0">
+
+                <div class="row no-gutters">
+                    <div class="col-xl-5 col-lp-6 col-lg-12">
+                        <div class="job-map-wrapper">
+                            <div class="job-filter">
+                                <div class="content-search">
+                                    <div class="section-filter">
+                                        <i class="lnr lnr-map-marker"></i>
+                                        <input class="location pac-target-input" type="text" name="location" id="location" placeholder="Localisation">
+                                    </div>
+                                    <div class="section-filter filter-advance">
+                                        <form action="#">
+                                            <div class="range-slider-wrap">
+                                                <div class="range-slider" data-min="15" data-max="100" data-value="15" data-step="1"></div>
+                                            </div>
+                                            <div class="row mt-20">
+
+                                                <div class="col-xl-6 col-lp-6 col-md-6 filter-item">
+                                                    <select class="nice-select wide">
+                                                        <option value="1">Choississez une catégorie</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="col-xl-6 col-lp-6 col-md-6 filter-item">
+                                                    <select class="nice-select wide">
+                                                        <option value="1">Choississez un service</option>
+                                                    </select>
+                                                </div>
+
+                                            </div>
+                                            <div class="field-item-submit">
+                                                <button class="ht-btn theme-btn theme-btn-two">Recherche</button>
+                                            </div>
+                                        </form>
+                                        <div class="bottom-section-filter">
+                                        </div>
+                                    </div>
+                                    <div class="section-result">
+                                        <div class="filter-form">
+                                            <div class="result-sorting">
+                                                <div class="total-result">
+                                                    <span class="total">(25)</span>
+                                                    résultats selon votre recherche
+                                                </div>
+                                                <div class="form-left">
+                                                    <div class="layout-switcher">
+                                                        <ul class="nav">
+                                                            <li>
+                                                                <a class="active show" data-toggle="tab" href="#list">
+                                                                    <i class="fa fa-list"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a data-toggle="tab" href="#grid">
+                                                                    <i class="fa fa-th"></i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-content">
+
+                                <div id="list" class="tab-pane fade show active">
+                                    <div class="row">
+
+                                        <div class="col-lg-12 mb-20">
+                                            
+                                            <div class="single-job style-two">
+                                                <div class="info-top">
+                                                    <div class="job-image">
+                                                        <a href="job-details.html">
+                                                            <img src="../assets/images/companies_logo/logo-100/logo1.jpg"
+                                                                alt="logo">
+                                                        </a>
+                                                    </div>
+                                                    <div class="job-info">
+                                                        <div class="job-info-inner">
+                                                            <div class="job-info-top">
+                                                                <div class="saveJob for-listing">
+                                                                    <a class="job-type-label ml-20 mr-20">Ajouter à mes favoris</a>
+                                                                    <a class="save-job"
+                                                                        href="#quick-view-modal-container"
+                                                                        data-toggle="modal">
+                                                                        <i class="far fa-heart"></i>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="title-name">
+                                                                    <h3 class="job-title">
+                                                                        <a href="job-details.html">Momo le Menuisier</a>
+                                                                    </h3>
+                                                                </div>
+                                                            </div>
+                                                            <div class="field-descriptions">
+                                                                <p>International collaborative, high-energy
+                                                                    environmentCompetitive salary and great benefits, English
+                                                                    training provided About Our Client Our…</p>
+
+                                                                    <a href="job-details.html" class="ht-btn theme-btn theme-btn-two">Contactez le</a>
+
+                                                            </div>
+                                                            <hr>
+                                                            <div class="star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <ul class="page-pagination">
+                                                <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+                                                <li class="active"><a href="#">1</a></li>
+                                                <li><a href="#">2</a></li>
+                                                <li><a href="#">3</a></li>
+                                                <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="grid" class="tab-pane fade">
+                                    <div class="row">
+
+                                        <div class="col-md-6 mb-20">
+                                            <div class="single-job-grid-two">
+                                                <div class="saveJob-grid">
+                                                    <a class="job-type-label ml-20 mr-20">Ajouter à mes favoris</a>
+                                                    <a class="save-job" href="#quick-view-modal-container" data-toggle="modal">
+                                                        <i class="far fa-heart"></i></a>
+                                                </div>
+                                                <div class="job-image">
+                                                    <a href="job-details.html">
+                                                        <img src="../assets/images/companies_logo/logo-100/logo1.jpg"
+                                                            alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="job-info">
+                                                    <div class="job-info-top">
+                                                        <div class="title-name">
+                                                            <h3 class="job-title">
+                                                                <a href="job-details.html">Momo le menuisier</a>
+                                                            </h3>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="field-descriptions">
+                                                        <p>International collaborative, high-energy
+                                                            environmentCompetitive salary and great benefits, English
+                                                            training provided About Our Client Our…</p>
+                                                            <a href="job-details.html" class="ht-btn theme-btn theme-btn-two">Contactez le</a>
+                                                            <hr>
+                                                            <div class="star">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <ul class="page-pagination">
+                                                <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+                                                <li class="active"><a href="#">1</a></li>
+                                                <li><a href="#">2</a></li>
+                                                <li><a href="#">3</a></li>
+                                                <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-lp-6 col-lg-12" id="sticky-sidebar">
+                        <div class="multiple-marker-map">
+                            <div id="map"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer-section section st-border">
+
+            <div class="footer-bottom section fb-60">
+                <div class="container">
+                    <div class="row no-gutters st-border pt-35 pb-35 align-items-center justify-content-between">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="copyright">
+                                <p>&copy;2021 <a href="">Leecka</a>. Tous droits réservés.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="footer-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-google"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+    </div>
+
+    <script src="../assets/js/vendor/jquery-3.5.0.min.js"></script>
+    <script src="../assets/js/vendor/jquery-migrate-3.1.0.min.js"></script>
+    <script src="../assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/plugins/plugins.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
+
+    <script>
+        var icons = {
+            parking: {
+                icon: 'https://tarantelleromane.files.wordpress.com/2016/10/map-marker.png?w=50'
+            }
+        };
+
+
+        // REPLACE WITH DATA FROM API
+        //TITLE | POSITION - LAT , LNG | ICON | TITLE | CONTENT
+        var airports = [{
+            title: 'Manchester Airport',
+            position: {
+                lat: 53.3588026,
+                lng: -2.274919
+            },
+            icon: 'parking',
+            content: '<div id="job-map-wrap"><div class="single-job style-two border-0"><div class="info-top"><div class="job-image"><a href="#"><img src="../assets/images/companies_logo/logo-100/logo1.jpg" alt="logo"></a></div><div class="job-info"><div class="job-info-inner"><div class="job-info-top"><div class="title-name"><h3 class="job-title"><a href="#">Chief Accountant</a></h3><div class="employer-name"><a href="#">Shippo Company</a></div></div></div></div></div></div></div></div>'
+        },
+        {
+            title: 'Leeds Airport',
+            position: {
+                lat: 53.8679434,
+                lng: -1.6637193
+            },
+            icon: 'parking',
+            content: '<div id="job-map-wrap"><div class="single-job style-two border-0"><div class="info-top"><div class="job-image"><a href="#"><img src="../assets/images/companies_logo/logo-100/logo2.jpg" alt="logo"></a></div><div class="job-info"><div class="job-info-inner"><div class="job-info-top"><div class="title-name"><h3 class="job-title"><a href="#">Construction Worker</a></h3><div class="employer-name"><a href="#">Digital Vine</a></div></div></div></div></div></div></div></div>'
+        },
+        {
+            title: 'Belfast Airport',
+            position: {
+                lat: 54.661781,
+                lng: -6.2184331
+            },
+            icon: 'parking',
+            content: '<div id="job-map-wrap"><div class="single-job style-two border-0"><div class="info-top"><div class="job-image"><a href="#"><img src="../assets/images/companies_logo/logo-100/logo3.jpg" alt="logo"></a></div><div class="job-info"><div class="job-info-inner"><div class="job-info-top"><div class="title-name"><h3 class="job-title"><a href="#">Receptionist</a></h3><div class="employer-name"><a href="#">Digital Vine</a></div></div></div></div></div></div></div></div>'
+        },
+        {
+            title: 'Edinburgh Airport',
+            position: {
+                lat: 55.950785,
+                lng: -3.3636419
+            },
+            icon: 'parking',
+            content: '<div id="job-map-wrap"><div class="single-job style-two border-0"><div class="info-top"><div class="job-image"><a href="#"><img src="../assets/images/companies_logo/logo-100/logo4.jpg" alt="logo"></a></div><div class="job-info"><div class="job-info-inner"><div class="job-info-top"><div class="title-name"><h3 class="job-title"><a href="#">Tax Manager</a></h3><div class="employer-name"><a href="#">Vsmarttech</a></div></div></div></div></div></div></div></div>'
+        },
+        {
+            title: 'Cardiff Airport',
+            position: {
+                lat: 51.3985498,
+                lng: -3.3416461
+            },
+            icon: 'parking',
+            content: '<div id="job-map-wrap"><div class="single-job style-two border-0"><div class="info-top"><div class="job-image"><a href="#"><img src="../assets/images/companies_logo/logo-100/logo5.jpg" alt="logo"></a></div><div class="job-info"><div class="job-info-inner"><div class="job-info-top"><div class="title-name"><h3 class="job-title"><a href="#">Chief Accountant</a></h3><div class="employer-name"><a href="#">Shippo Company</a></div></div></div></div></div></div></div></div>'
+        },
+        {
+            title: 'Heathrow Airport',
+            position: {
+                lat: 51.4700223,
+                lng: -0.4542955
+            },
+            icon: 'parking',
+            content: '<div id="job-map-wrap"><div class="single-job style-two border-0"><div class="info-top"><div class="job-image"><a href="#"><img src="../assets/images/companies_logo/logo-100/logo1.jpg" alt="logo"></a></div><div class="job-info"><div class="job-info-inner"><div class="job-info-top"><div class="title-name"><h3 class="job-title"><a href="#">Chief Accountant</a></h3><div class="employer-name"><a href="#">Shippo Company</a></div></div></div></div></div></div></div></div>'
+        }
+        ];
+
+        function initMap() {
+
+            var uk = {
+                lat: 53.990221,
+                lng: -3.911132
+            };
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 6,
+                center: uk,
+                disableDefaultUI: true,
+                styles: [{
+                    "elementType": "labels",
+                    "stylers": [{
+                        "visibility": "off"
+                    }, {
+                        "color": "#f49f53"
+                    }]
+                }, {
+                    "featureType": "landscape",
+                    "stylers": [{
+                        "color": "#f9ddc5"
+                    }, {
+                        "lightness": -7
+                    }]
+                }, {
+                    "featureType": "road",
+                    "stylers": [{
+                        "color": "#813033"
+                    }, {
+                        "lightness": 43
+                    }]
+                }, {
+                    "featureType": "poi.business",
+                    "stylers": [{
+                        "color": "#645c20"
+                    }, {
+                        "lightness": 38
+                    }]
+                }, {
+                    "featureType": "water",
+                    "stylers": [{
+                        "color": "#1994bf"
+                    }, {
+                        "saturation": -69
+                    }, {
+                        "gamma": 0.99
+                    }, {
+                        "lightness": 43
+                    }]
+                }, {
+                    "featureType": "road.local",
+                    "elementType": "geometry.fill",
+                    "stylers": [{
+                        "color": "#f19f53"
+                    }, {
+                        "weight": 1.3
+                    }, {
+                        "visibility": "on"
+                    }, {
+                        "lightness": 16
+                    }]
+                }, {
+                    "featureType": "poi.business"
+                }, {
+                    "featureType": "poi.park",
+                    "stylers": [{
+                        "color": "#645c20"
+                    }, {
+                        "lightness": 39
+                    }]
+                }, {
+                    "featureType": "poi.school",
+                    "stylers": [{
+                        "color": "#a95521"
+                    }, {
+                        "lightness": 35
+                    }]
+                }, {}, {
+                    "featureType": "poi.medical",
+                    "elementType": "geometry.fill",
+                    "stylers": [{
+                        "color": "#813033"
+                    }, {
+                        "lightness": 38
+                    }, {
+                        "visibility": "off"
+                    }]
+                }, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {
+                    "elementType": "labels"
+                }, {
+                    "featureType": "poi.sports_complex",
+                    "stylers": [{
+                        "color": "#9e5916"
+                    }, {
+                        "lightness": 32
+                    }]
+                }, {}, {
+                    "featureType": "poi.government",
+                    "stylers": [{
+                        "color": "#9e5916"
+                    }, {
+                        "lightness": 46
+                    }]
+                }, {
+                    "featureType": "transit.station",
+                    "stylers": [{
+                        "visibility": "off"
+                    }]
+                }, {
+                    "featureType": "transit.line",
+                    "stylers": [{
+                        "color": "#813033"
+                    }, {
+                        "lightness": 22
+                    }]
+                }, {
+                    "featureType": "transit",
+                    "stylers": [{
+                        "lightness": 38
+                    }]
+                }, {
+                    "featureType": "road.local",
+                    "elementType": "geometry.stroke",
+                    "stylers": [{
+                        "color": "#f19f53"
+                    }, {
+                        "lightness": -10
+                    }]
+                }, {}, {}, {}]
+            });
+
+            var InfoWindows = new google.maps.InfoWindow({});
+
+            airports.forEach(function (airport) {
+                var marker = new google.maps.Marker({
+                    position: {
+                        lat: airport.position.lat,
+                        lng: airport.position.lng
+                    },
+                    map: map,
+                    icon: icons[airport.icon].icon,
+                    title: airport.title
+                });
+                marker.addListener('mouseover', function () {
+                    InfoWindows.open(map, this);
+                    InfoWindows.setContent(airport.content);
+                });
+            });
+        }
+    </script>
+
+</body>
+
+</html>
